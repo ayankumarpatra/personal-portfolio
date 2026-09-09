@@ -1,0 +1,21 @@
+.qt{
+    display: flex;
+    justify-content: center;
+    color: #fafafa;  
+    background-color: #2e3440;
+    font-family: papyrus, Helvetica, sans-serif;
+    font-size: 2.5vw;
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
