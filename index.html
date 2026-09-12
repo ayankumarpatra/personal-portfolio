@@ -27,27 +27,100 @@
 
             </div>
 
-        
-        
         </div>
 
         <div class="hero-section">
+            <div class="faded-text">Ayan Kumar Patra</div>
           <div class="hero-section-left">
             <div class="hero-section-heading">Hello World : </div>
-            <div class="hero-section-sub-heading">
+            <div class="hero-section-heading hero-section-sub-heading">
                 I am a <span class="role"></span>
             </div>
             <div class="hero-section-description">
-                Debugging both code and photos ;
-                Always Looking for the next "Hello World"
+                Debugging both code and photos ;<br>
+                Always Looking for the next <span class="hero-hello"> "Hello World" </span>
             </div>
             
-            <div class="btn">Hire Me</div>
+            <div class="button">Hire Me</div>
           </div>
 
-          <div class="hero-section-right"></div>
+          <div class="hero-section-right">
+            <div class="absolute icons icon-dotsright">
+                <img src="/assets/other-photos/balls.png" alt="" />
+            </div>
+            <div class="absolute icons icon-dotsleft">
+                <img src="/assets/other-photos/balls2.png" alt="" />
+            </div>
+            <div class="absolute icons icon-cube">
+                <img src="/assets/other-photos/cube.png" alt="" />
+            </div>
+            <div class="user-image">
+                <img src="/assets/other-photos/Profile_Photo.png" alt="" />
+            </div>
+
+          </div>
         </div>
 
     </div>
+
+    <div class="projet-section">
+        <h2 class="page-header">Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card" id="project1">
+                <div class="project-number">01</div>
+                <div class="project-content">
+                    <div class="skill-icons">
+                        <img class="stack-icons" src="/assets/other-photos/html.png">
+                        <img class="stack-icons" src="/assets/other-photos/css.png">
+                        <img class="stack-icons" src="/assets/other-photos/js.png">
+                        <img class="stack-icons" src="/assets/other-photos/js2.png">
+                    </div>
+                </div>
+
+                <h2 class="project-heading">Portfolio Website</h2>
+                <div class="project-subheading">A Linked list that connects to all of my project nodes</div>
+
+                <div class="project-buttons">
+                    <a href="https://github.com/ayankumarpatra/personal-portfolio" target="_blank">
+                        <img class="giticon" src="/assets/other-photos/github-logo.png">
+                    </a>
+
+                    <a href=" // add here after deploy " target="_blank">
+                        <img class="stack-icons" src="/assets/other-photos/open-link.png">
+                    </a>
+
+                    <a href="https://github.com/ayankumarpatra/personal-portfolio/blob/main/README.md" target="_blank">
+                        <img class="giticon" src="/assets/other-photos/read-more.png">
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+ <!-- the script , currently only copy pasting , will learn it later -->
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Web Developer",
+        "Full Stack Developer",
+        "UI-UX Designer",
+        "Backend Developer",
+        "Coder",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
+
 </body>
 </html>

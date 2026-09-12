@@ -1,10 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
 .qt{
+    /* top quote specs */
+    width: 100%;
     display: flex;
     justify-content: center;
-    color: #fafafa;  
+    align-items: center;
+
+    color: #fafafa;
     background-color: #2e3440;
-    font-family: papyrus, Helvetica, sans-serif;
-    font-size: 2.5vw;
+    font-family: Papyrus, Helvetica, sans-serif;
+    font-size: clamp(16px, 2.5vw, 30px);
+    padding: 5px 15px;
 }
 
 *{
@@ -12,17 +19,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter,sans-serif;
+    font-family: "Be Vietnam Pro",sans-serif;
 }
 
-#wrapper{
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+#wrapper {
+    min-height: 100vh;
+    /* overflow-x: hidden; */
 }
 
-.container{
-    width: 1200px;
+.container {
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -66,6 +73,7 @@
 }
 
 a{
+    /* to remove the underlines under the nav bar */
     text-decoration: none;
 }
 
@@ -74,6 +82,229 @@ a{
 }
 
 .nav-items div:hover{
+    /* the menu items pop up handler */
     transform: scale(1.15);
     font-weight: bold;
+}
+
+.hero-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* these things will be pre given to you */
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}
+
+.faded-text{
+    user-select: none;
+    position: absolute;
+    
+    /* pos property , will be given */
+    
+    font-size: 7em;
+    color: antiquewhite;
+    bottom: -3%;
+    left: 1%;
+    font-weight: bold;
+    transition: all 3s;
+}
+
+.hero-section-left{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-hello{
+    font-family: monospace;
+    font-weight: bolder;
+    color: rgb(59, 148, 151);
+}
+
+
+.hero-section-heading{
+    font-size: 35px;
+    color: rgb(16, 151, 235);
+    font-weight: 500;
+}
+
+.role{
+    color: rgb(23, 220, 154);
+    font-weight: 800;
+}
+
+.hero-section-sub-heading{
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.hero-section-description{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+.button {
+    padding: 0.8rem 2.3rem;
+    width: fit-content;
+    background-color: cadetblue;
+    color: white;
+    font-size: 20px;
+    box-shadow: 5px 7px 0px rgb(19, 41, 112);
+    position: relative;
+    z-index: 1;
+}
+
+.button::before{
+    content: "";
+    background-color: rgb(46, 80, 190);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.button:hover::before{
+    transform: scaleX(1);
+}
+
+
+.hero-section-right{
+    width: 45%;
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.user-image{
+    padding: 2.5rem;
+    /* filter: grayscale(1); */
+    transition: all 1s;
+    animation: scaleimage 5s linear infinite;
+}
+
+.user-image img{
+    z-index: -5;
+    width: 400px;
+    height: auto;
+}
+
+@keyframes scaleimage {
+    0%{
+        filter: grayscale(0);
+        transform: scale(0.8);
+    }
+    50%{
+        filter: grayscale(1);
+        transform: scale(1);
+        box-shadow: 3px 3px 10px blue;
+    }
+    100%{
+        transform: scale(0.8);
+        filter: grayscale(0);
+    }
+}
+
+.icon-dotsright{
+    z-index: 5;
+    bottom: -1rem;
+    right: 0;
+    animation-name: rightdot-anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rightdot-anim{
+    0%{
+        transform: translateY(0px);
+        scale: 0.7;
+    }
+    50%{
+        transform: translateY(-15px);
+        scale: 0.9;
+    }
+    100%{
+        transform: translateY(0px);
+        scale: 0.7;
+    }
+}
+
+.icon-cube{
+    z-index: 5;
+    top: -0.8em;
+    right: 1em;
+    animation-name: cuberotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cuberotate{
+    /* translateY for up down movemment and rotatey for the reotation  */
+    0%{
+        transform: rotateY(0deg) translateY(0px);
+    }
+    50%{
+        transform: rotateY(180deg) translateY(-12px);
+    }
+    100%{
+        transform: rotateY(360deg) translateY(0px);
+    }
+
+}
+
+
+.icon-dotsleft{
+    z-index: 5;
+    left: 0;
+    bottom: 0;
+    animation-name: shakeleft;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shakeleft{
+    0%{
+        left: 0;
+        bottom: 0;
+    }
+    50%{
+        left: 5%;
+        bottom: 10%;
+    }
+    100%{
+        left: 0;
+        bottom: 0;
+    }
+}
+
+
+.icon-dotsright img,
+.icon-dotsleft img{
+    width: 100px;
+    height: auto;
+}
+
+
+.stack-icons{
+    height: 50px;
+    width: 50px;
+}
+.giticon{
+    height: 50px;
+    width: auto;
 }
