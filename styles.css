@@ -484,19 +484,19 @@ position: absolute;
 }
 
 #project1{
-    background-image: url("/assets/other-photos/poj1.jpg");
+    background-image: url("assets/other-photos/poj1.jpg");
 }
 
 #project2{
-    background-image: url("/assets/other-photos/poj2.jpg");
+    background-image: url("assets/other-photos/poj2.jpg");
 }
 
 #project3{
-    background-image: url("/assets/other-photos/poj3.jpg");
+    background-image: url("assets/other-photos/poj3.jpg");
 }
 
 #project4{
-    background-image: url("/assets/other-photos/poj4.jpg");
+    background-image: url("assets/other-photos/poj4.jpg");
 }
 
 /* Alternate the complete project layout */
