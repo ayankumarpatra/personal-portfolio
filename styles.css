@@ -511,3 +511,66 @@ position: absolute;
 .project-subheading{
     font-size: 1.4rem;
 }
+
+.tech-stack{
+    width: 100%;
+}
+
+.tech-stack-top-text {
+    user-select: none;    
+
+    width: 90%;
+    font-size: 7em;
+    color: rgb(162, 103, 206);
+
+    margin: 0 auto;
+    font-weight: bold;
+    transition: all 3s;
+
+    /* the line bellow the word */
+    border-bottom: 4px solid rgb(145, 67, 204);
+    line-height: 0.75; 
+}
+
+.tech-stack-content {
+    background-color: rgb(253, 221, 253);
+    width: 90%;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tech-stack-description {
+    flex: 1.5; /* Takes up proportional space on the left */
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: rgb(0, 0, 70);
+
+    padding: 20px 20px;
+}
+
+.tech-stack-icons {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;                /* Allows icons to wrap into multiple rows if needed */
+    gap: 15px;                      /* Spacing between individual icons */
+
+    padding: 20px 20px;
+}
+
+.stack-icons-tech {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.stack-icons-tech:hover {
+    transform: scale(1.2);
+}
