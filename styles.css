@@ -574,3 +574,32 @@ position: absolute;
 .stack-icons-tech:hover {
     transform: scale(1.2);
 }
+
+
+.quote2 {
+  margin: 20px 0;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  border-right: 5px solid #4a90e2; /* Change color to fit your theme */
+  border-radius: 0 8px 8px 0;
+}
+
+.quote-main {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #760b4d;
+  font-style: italic;
+  margin-left: 50%;
+}
+
+.quote-sub {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    color: #7f8c8d;
+    font-weight: 500;
+    margin-left: 55%;
+}
