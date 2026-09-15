@@ -603,3 +603,77 @@ position: absolute;
     font-weight: 500;
     margin-left: 55%;
 }
+
+
+.faded-text-skills{
+    user-select: none;    
+
+    width: 90%;
+    font-size: 6em;
+    /* pos property , will be given */
+    color: rgb(119, 188, 207);
+    margin: 0 auto;
+    font-weight: bold;
+    transition: all 3s;
+    
+    margin-bottom: -54px;
+}
+
+.achivements-block{
+    width: 90%;
+    margin: 30px auto;
+
+    background: linear-gradient(90deg, rgb(225, 240, 255), rgb(240, 250, 255));
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+.achivements-logo{
+    flex: 1;
+    min-width: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achivements-logo img{
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+.achievement-number {
+    width: 10%;
+
+    font-size: 6em;
+    font-weight: bold;
+    opacity: 0.2;
+
+    text-align: center;
+}
+
+.achivements-block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.achivements-block:nth-child(2) {
+    background: linear-gradient(90deg, rgb(225, 242, 255), rgb(248, 252, 255));
+}
+
+.achivements-block:nth-child(3) {
+    background: linear-gradient(90deg, rgb(255, 235, 235), rgb(255, 248, 248));
+    flex-direction: row-reverse;
+}
+
+.skills{
+    padding-top: 30px;
+    background-color: rgb(187, 230, 242);
+    width: 90%;
+    margin: 30px auto;;
+}
