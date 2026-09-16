@@ -623,13 +623,16 @@ position: absolute;
     width: 90%;
     margin: 30px auto;
 
-    background: linear-gradient(90deg, rgb(225, 240, 255), rgb(240, 250, 255));
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     box-sizing: border-box;
+}
+
+.achivements-text{
+    flex: 2;
+    padding: 15px 15px;
 }
 
 .achivements-logo{
@@ -646,6 +649,11 @@ position: absolute;
     max-width: 500px;
     height: auto;
     object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.achivements-logo img:hover{
+    transform: scale(1.2);
 }
 
 .achievement-number {
@@ -662,18 +670,44 @@ position: absolute;
     flex-direction: row-reverse;
 }
 
-.achivements-block:nth-child(2) {
-    background: linear-gradient(90deg, rgb(225, 242, 255), rgb(248, 252, 255));
-}
-
-.achivements-block:nth-child(3) {
-    background: linear-gradient(90deg, rgb(255, 235, 235), rgb(255, 248, 248));
+.achivements-block:nth-child(even) {
     flex-direction: row-reverse;
 }
 
 .skills{
     padding-top: 30px;
-    background-color: rgb(187, 230, 242);
+    background: linear-gradient(
+    180deg,
+    rgb(180, 225, 240),
+    rgb(220, 235, 250),
+    rgb(245, 225, 245),
+    rgb(255, 205, 205)
+);
     width: 90%;
     margin: 30px auto;;
+}
+
+
+.faded-text-contact-me{
+    user-select: none;    
+
+    width: 90%;
+    font-size: 6em;
+    /* pos property , will be given */
+    color: rgb(114, 114, 114);
+    margin: 0 auto;
+    font-weight: bold;
+    transition: all 3s;
+    margin-left: 58px;
+    
+    margin-bottom: -75px;
+}
+
+.contact-me-container{
+    width: 90%;
+    margin: 50px auto;
+    padding-top: 30px;
+    padding-left: 15px;
+    background-color: rgb(194, 194, 194);
+
 }
