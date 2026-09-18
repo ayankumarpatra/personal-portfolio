@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ayankrpatra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="Stylesheet" href="styles.css" >
+
 </head>
 <body>
     <div class="qt">Don't hardcode your expectations : Leave room for dynamic variables and unexpected inputs.</div>
@@ -345,34 +347,37 @@
 
 <div class="faded-text-contact-me">Let's Get in Touch</div>
 <div class="contact-me-container">
-    <h2 class="contact-me-subheading"> Questions, thoughts, or just want to say hello? </h2>
+    <h2 class="contact-me-subheading"> Questions, thoughts, or just want to say hello :) </h2>
 
     <div class="contact-me-form-container">
         <form action="">
 
             <div class="form-container">
+                    <div class="formfield-container">
 
-                <input class="formfield" 
-                type="text" name="name" id="" placeholder="Enter your name"/>
+                        
+                        <input class="formfield" 
+                        type="text" name="name" id="" placeholder="Enter your name"/>
+                        
+                        <input class="formfield" 
+                        type="email" name="email" id="" placeholder="Enter your email address"/>
+                        
+                        
+                        <input class="formfield" 
+                        type="text" name="subject" id="" placeholder="Enter subject"/>
+                        
+                        <textarea name="message"
+                        id="" cols="30" rows="10"
+                        class="formfield formfield-textarea"
+                        placeholder="Enter your message"></textarea>
+                        
+                    </div>
+                    
+                    <button type="submit" class="button sub-button" id="submit-btn">
+                        Send Message <i class=" paperplane fa-solid fa-paper-plane"></i>
+                    </button>
 
-                <input class="formfield" 
-                type="email" name="email" id="" placeholder="Enter your email address"/>
-
-
-                <input class="formfield" 
-                type="text" name="subject" id="" placeholder="Enter subject"/>
-
-                <textarea name="message"
-                id="" cols="30" rows="10"
-                class="formfield formfield-textarea"
-                placeholder="Enter your message"></textarea>
-
-            </div>
-
-            <button type="submit" class="button" id="submit-btn">
-                Send Message <i class="paperplane"></i>
-            </button>
-
+                </div>
         </form>
     </div>
 
@@ -380,13 +385,37 @@
 
 
 
-
-
-
 <!--                         footer                             -->
 
 
+<footer>
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer-faded-text">Ayan Kumar Patra</div>
 
+            <div class="footer-lcon-links">
+
+                <a class="foot-icon" href="https://www.instagram.com/ayankrpatra/" target="_blank">
+                    <i class="fa-brands fa-instagram" ></i>
+                </a>
+
+
+                <a class="foot-icon" href="https://www.linkedin.com/in/ayankrpatra/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a class="foot-icon" href="https://github.com/ayankumarpatra" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a class="foot-icon" href="https://leetcode.com/u/ayankrpatra/" target="_blank">
+                    <img class="foot-leetcode" src="/assets/vectors/leetcode-brands-solid.png">
+                </a>
+
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
