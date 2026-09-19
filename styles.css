@@ -776,16 +776,59 @@ position: absolute;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+
+    font-size: 24px;
 }
 
 .foot-icon{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform 0.5s ease;
 }
+
 
 .foot-leetcode{
     width: 25px;
     height: 25px;
     object-fit: contain;
+}
+
+.foot-icon:hover{
+    transform: scale(1.5);
+    color: #005ac0;
+}
+
+.footer{
+    position: relative;
+    margin-top: -1px;
+    background-color: #a1cdff;
+
+    padding: 5rem;
+}
+
+.footer-wrapper{
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-faded-text{
+    position: absolute;
+    font-size: 3.9rem;
+    color: rgba(0, 72, 92, 0.459);
+    margin: 0 auto;
+    font-weight: bold;
+    transition: all 3s;
+    bottom: -1px;
+    margin-left: -50px;
+
+    user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
