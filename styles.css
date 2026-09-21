@@ -180,7 +180,6 @@ a{
     transform: scaleX(1);
 }
 
-
 .hero-section-right{
     width: 45%;
     position: relative;
@@ -593,7 +592,7 @@ position: absolute;
   font-weight: bold;
   color: #760b4d;
   font-style: italic;
-  margin-left: 50%;
+  margin-left: 55%;
 }
 
 .quote-sub {
@@ -601,7 +600,7 @@ position: absolute;
     font-size: 3rem;
     color: #7f8c8d;
     font-weight: 500;
-    margin-left: 55%;
+    margin-left: 60%;
 }
 
 
