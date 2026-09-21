@@ -670,9 +670,6 @@ position: absolute;
     flex-direction: row-reverse;
 }
 
-.achivements-block:nth-child(even) {
-    flex-direction: row-reverse;
-}
 
 .skills{
     padding-top: 30px;
